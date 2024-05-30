@@ -1,0 +1,68 @@
+{% extends "base.html" %}
+{% block title %}
+  |Service
+{% endblock title %}
+{% block content %}
+{% load static %}
+      <!-- services section start -->
+      <div class="services_section layout_padding">
+         <div class="container">
+            <div class="row">
+               <div class="col-sm-12">
+                  <h1 class="services_taital" data-aos="fade-up" data-aos-duration="1000"> Our Services</h1>
+                  <p class="services_text" data-aos="fade-up" data-aos-duration="1000">KNOWING OUR CUSTOMER NEEDS </p>
+                  <p class="services_text" data-aos="fade-up" data-aos-duration="1000">We're more then just momos</p>
+                  <p class="services_text" data-aos="fade-up" data-aos-duration="1000">We're a full-services dining experience!</p>
+               </div>
+            </div>
+            <div class="services_section_2">
+               <div class="row">
+                  <div class="col-lg-4 col-sm-12 col-md-4">
+                     <div class="box_main active" data-aos="fade-up" data-aos-duration="1000">
+                        <div class="house_icon">
+                           <img src="{% static 'images/high-quality.png' %}" class="image_1">
+                           <img src="{% static 'images/quality2.png' %}" class="image_2">
+                        </div>
+                        <h3 class="decorate_text">Quality Food</h3>
+                        <p class="tation_text">
+                           We believe in using only the highest quality ingredients to create momos that are bursting with flavor. 
+                           Our fillings are prepared daily with fresh, vegetables and succulent meats.
+                           
+                        </p>
+                        <div class="readmore_bt"><a href="">Read More</a></div>
+                     </div>
+                  </div>
+                  <div class="col-lg-4 col-sm-12 col-md-4">
+                     <div class="box_main" data-aos="fade-up" data-aos-duration="1000">
+                        <div class="house_icon">
+                           <img src="{% static 'images/party.png' %}" class="image_1">
+                           <img src="{% static 'images/party2.png' %}" class="image_2">
+                        </div>
+                        <h3 class="decorate_text">Private Party</h3>
+                        <p class="tation_text">
+                           Pair your momos with our selection of dipping sauces and chutneys for an unforgettable get-together. 
+                           Let us help you create a fun and flavorful feast for your next celebration!
+                        </p>
+                        <div class="readmore_bt"><a href="">Read More</a></div>
+                     </div>
+                  </div>
+                  <div class="col-lg-4 col-sm-12 col-md-4">
+                     <div class="box_main" data-aos="fade-up" data-aos-duration="1000">
+                        <div class="house_icon">
+                           <img src="{% static 'images/food-cover.png' %}" class="image_1">
+                           <img src="{% static 'images/catering2.png' %}" class="image_2">
+                        </div>
+                        <h3 class="decorate_text">Catering</h3>
+                        <p class="tation_text">
+                           Make your next gathering unforgettable with our momo catering service! 
+                           We offer a variety of catering packages to suit any event size and budget as per need.
+                        </p>
+                        <div class="readmore_bt"><a href="">Read More</a></div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- services section end -->    
+  {% endblock content %}

@@ -1,0 +1,34 @@
+{% extends "base.html" %}
+{% block title %}
+  |About
+{% endblock title %}
+{% block content %}
+{% load static %}
+
+      <!-- about section start -->
+      <div class="about_section layout_padding">
+         <div class="container">
+            <div class="row">
+               <div class="col-md-6">
+                  <div class="about_taital_main">
+                     <div class="about_taital">About Us</div>
+                     <p class="about_text">
+                        We at <b style="color: #f76d37;">M</b>OMOS are passionate about bringing you the authentic taste of Nepal through our momos. 
+                        Made with fresh, high-quality ingredients and following traditional recipes, 
+                        our momos are bursting with flavor and sure to tantalize your taste buds. 
+                        Whether you're a momo aficionado or a curious newcomer, we offer a warm and welcoming 
+                        atmosphere where you can savor this delicious Nepalese dish. 
+                        Come experience the magic of momos and embark on a culinary journey to Nepal!
+                     </p>
+                     <div class="read_bt"><a href="#">Read More</a></div>
+                  </div>
+               </div>
+               <div class="col-md-6">
+                  <div class="about_img"><img src="{% static 'images/cook1.jpg' %}" style="border: none; border-radius: 0%;"></div>
+               </div>
+            </div>
+         </div>
+      </div>
+{% endblock content %}
+
+      

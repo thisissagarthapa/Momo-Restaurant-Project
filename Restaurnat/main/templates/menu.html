@@ -1,0 +1,140 @@
+{% extends "base.html" %}
+{% block title %}
+  |Menu
+{% endblock title %}
+{% block content %}
+{% load static %}
+
+<!-- gallery section start -->
+<div class="gallery_section layout_padding">
+   <div class="container">
+      <div class="row">
+         <div class="col-sm-12">
+            <h1 class="gallery_taital">Our Menu</h1>
+            <p class="gallery_text"><span style="color:red">Our menu is more than just momos</span><br>With a variety of
+               dishes to cater to all tastes and preferences.</p>
+         </div>
+      </div>
+      <div>
+         <h1 class="just">Scan the QR code</h1>
+         <h1 class="qr-image"><img src="{% static 'images/qr.png' %}"></h1>
+      </div>
+      <div class="gallery_section_2">
+         <div class="row">
+            <div class="col-md-4">
+               <div class="container_main">
+                  <img src="{% static 'images/buff_momo.jpeg' %}" alt="Avatar" class="image">
+                  <span> Buff C. Momo</span>
+                  <p class="card-price">रु200</p>
+                  <div class="overlay">
+                     <div class="text"><a href="#"><i class="fa fa-search" aria-hidden="true"></i></a></div>
+                  </div>
+               </div>
+            </div>
+            <div class="col-md-4">
+               <div class="container_main">
+                  <img  src="{% static 'images/buff_fried.jpg' %}" alt="Avatar" class="image">
+                  <span> Buff Fried Momo</span>
+                  <p class="card-price">रु150</p>
+                  <div class="overlay">
+                     <div class="text"><a href="#"><i class="fa fa-search" aria-hidden="true"></i></a></div>
+                  </div>
+               </div>
+            </div>
+            <div class="col-md-4">
+               <div class="container_main">
+                  <img src="{% static 'images/momo.jpg' %}" alt="Avatar" class="image">
+                  <span> Buff Steam Momo</span>
+                  <p class="card-price">रु110</p>
+                  <div class="overlay">
+                     <div class="text"><a href="#"><i class="fa fa-search" aria-hidden="true"></i></a></div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+
+      <div class="gallery_section_2">
+         <div class="row">
+
+            <div class="col-md-4">
+               <div class="container_main">
+                  <img src="{% static 'images/chicken_c.jpg' %}" alt="Avatar" class="image">
+                  <span> Chicken C. Momo</span>
+                  <p class="card-price">रु240</p>
+                  <div class="overlay">
+                     <div class="text"><a href="#"><i class="fa fa-search" aria-hidden="true"></i></a></div>
+                  </div>
+               </div>
+            </div>
+
+            <div class="col-md-4">
+               <div class="container_main">
+                  <img src="{% static 'images/chicken_fried.jpg' %}" alt="Avatar" class="image">
+                  <span> Chicken Fried Momo</span>
+                  <p class="card-price">रु220</p>
+                  <div class="overlay">
+                     <div class="text"><a href="#"><i class="fa fa-search" aria-hidden="true"></i></a></div>
+                  </div>
+               </div>
+            </div>
+
+            <div class="col-md-4">
+               <div class="container_main">
+                  <img src="{% static 'images/chicken_steam.jpg' %}" alt="Avatar" class="image">
+                  <span> Chicken Steam Momo</span>
+                  <p class="card-price">रु200</p>
+                  <div class="overlay">
+                     <div class="text"><a href="#"><i class="fa fa-search" aria-hidden="true"></i></a></div>
+                  </div>
+               </div>
+            </div>
+
+         </div>
+      </div>
+
+      <div class="gallery_section_2">
+         <div class="row">
+
+            <div class="col-md-4">
+               <div class="container_main">
+                  <img src="{% static 'images/veg_momo.jpg' %}" alt="Avatar" class="image">
+                  <span> Veg C. Momo</span>
+                  <p class="card-price">रु150</p>
+                  <div class="overlay">
+                     <div class="text"><a href="#"><i class="fa fa-search" aria-hidden="true"></i></a></div>
+                  </div>
+               </div>
+            </div>
+
+            <div class="col-md-4">
+               <div class="container_main">
+                  <img src="{% static 'images/veg_fried.jpg' %}" alt="Avatar" class="image">
+                  <span> Veg Fried Momo</span>
+                  <p class="card-price">रु120</p>
+                  <div class="overlay">
+                     <div class="text"><a href="#"><i class="fa fa-search" aria-hidden="true"></i></a></div>
+                  </div>
+               </div>
+            </div>
+
+            <div class="col-md-4">
+               <div class="container_main">
+                  <img src="{% static 'images/green_veg.jpeg' %}" alt="Avatar" class="image">
+                  <span> Veg Steam Momo</span>
+                  <p class="card-price">रु100</p>
+                  <div class="overlay">
+                     <div class="text"><a href="#"><i class="fa fa-search" aria-hidden="true"></i></a></div>
+                  </div>
+               </div>
+            </div>
+
+
+         </div>
+      </div>
+      <div class="seemore_bt"><a href="#">See More</a></div>
+   </div>
+</div>
+<!-- gallery section end -->
+{% endblock content %}
+

@@ -1,0 +1,573 @@
+{% extends "base.html" %}
+{% block title %}
+  |Home
+{% endblock title %}
+ {% block content %}
+  {% load static %}
+
+   <!-- Alertify for form -->
+{% if messages %} {% for message in messages %}
+<script>
+  alertify.set("notifier", "position", "top-left");
+  alertify.success("{{message}}");
+</script>
+{% endfor %} {% endif %}
+
+<!-- banner section start -->
+<div class="banner_section layout_padding">
+  <div class="container">
+    <div id="main_slider" class="carousel slide" data-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="row">
+            <div class="col-sm-6"></div>
+            <div class="col-sm-6">
+              <div class="banner_title">
+                <h1
+                  class="outstanding_text"
+                  style="color: white"
+                  data-aos="zoom-out"
+                  data-aos-duration="2000"
+                >
+                  <b style="color: #f76d37">M</b>OMOS
+                </h1>
+                <h1
+                  class="coffee_text"
+                  data-aos="zoom-in"
+                  data-aos-duration="2000"
+                >
+                  The Best <br />
+                  Momo Restaurant
+                </h1>
+                <p
+                  class="there_text"
+                  data-aos="fade-up"
+                  data-aos-duration="1000"
+                >
+                  We at <b style="color: #f76d37">M</b>OMOS are passionate about
+                  bringing you the authentic taste of Nepal through our momos.
+                  Made with fresh, high-quality ingredients and following
+                  traditional recipes, our momos are bursting with flavor and
+                  sure to tantalize your taste buds. Whether you're a momo
+                  aficionado or a curious newcomer, we offer a warm and
+                  welcoming atmosphere where you can savor this delicious
+                  Nepalese dish. Come experience the magic of momos and embark
+                  on a culinary journey to Nepal!
+                </p>
+                <div
+                  class="learnmore_bt"
+                  data-aos="fade-up"
+                  data-aos-duration="1000"
+                >
+                  <a href="">LEARN MORE</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="sliders-bottom" data-aos="fade-up" data-aos-duration="1000">
+        <a
+          class="carousel-control-prev"
+          href="#main_slider"
+          role="button"
+          data-slide="prev"
+        >
+          <i class="fa fa-angle-left"></i>
+        </a>
+        <a
+          class="carousel-control-next"
+          href="#main_slider"
+          role="button"
+          data-slide="next"
+        >
+          <i class="fa fa-angle-right"></i>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- banner section end -->
+<!-- about section start -->
+<div class="about_section layout_padding">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <div class="row-md-2">
+          <div class="about_taital_main">
+            <div
+              class="about_taital"
+              data-aos="fade-up"
+              data-aos-duration="1000"
+            >
+              Why Customer Love Us?
+            </div>
+            <p class="about_text" data-aos="fade-up" data-aos-duration="1000">
+              We serve up authentic momos bursting with flavor, made with fresh
+              ingredients and traditional recipes. We offer a warm and welcoming
+              atmosphere, perfect for enjoying a delicious and satisfying meal.
+              Whether you're a momo connoisseur or just discovering their magic,
+              we're sure you'll love our taste of Nepal.
+            </p>
+            <div class="read_bt"><a href="">READ MORE</a></div>
+          </div>
+        </div>
+
+        <div
+          class="row-md-4 about_img"
+          data-aos="fade-up"
+          data-aos-duration="1000"
+        >
+          <img src="{% static 'images/top-momo.jpg' %}" />
+        </div>
+      </div>
+      <div class="col-md-1"></div>
+      <div class="col-md-5">
+        <div class="about_img1" data-aos="fade-up" data-aos-duration="1000">
+          <img src="{% static 'images/eating.jpg' %}" />
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- services section start -->
+<div class="services_section layout_padding">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12">
+        <h1 class="services_taital" data-aos="fade-up" data-aos-duration="1000">
+          Our Services
+        </h1>
+        <p class="services_text" data-aos="fade-up" data-aos-duration="1000">
+          KNOWING OUR CUSTOMER NEEDS
+        </p>
+        <p class="services_text" data-aos="fade-up" data-aos-duration="1000">
+          We're more then just momos
+        </p>
+        <p class="services_text" data-aos="fade-up" data-aos-duration="1000">
+          We're a full-services dining experience!
+        </p>
+      </div>
+    </div>
+    <div class="services_section_2">
+      <div class="row">
+        <div class="col-lg-4 col-sm-12 col-md-4">
+          <div
+            class="box_main active"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+          >
+            <div class="house_icon">
+              <img
+                src="{% static 'images/high-quality.png' %}"
+                class="image_1"
+              />
+              <img src="{% static 'images/quality2.png' %}" class="image_2" />
+            </div>
+            <h3 class="decorate_text">Quality Food</h3>
+            <p class="tation_text">
+              We believe in using only the highest quality ingredients to create
+              momos that are bursting with flavor. Our fillings are prepared
+              daily with fresh, vegetables and succulent meats.
+            </p>
+            <div class="readmore_bt"><a href="">Read More</a></div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-sm-12 col-md-4">
+          <div class="box_main" data-aos="fade-up" data-aos-duration="1000">
+            <div class="house_icon">
+              <img src="{% static 'images/party.png' %}" class="image_1" />
+              <img src="{% static 'images/party2.png' %}" class="image_2" />
+            </div>
+            <h3 class="decorate_text">Private Party</h3>
+            <p class="tation_text">
+              Pair your momos with our selection of dipping sauces and chutneys
+              for an unforgettable get-together. Let us help you create a fun
+              and flavorful feast for your next celebration!
+            </p>
+            <div class="readmore_bt"><a href="">Read More</a></div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-sm-12 col-md-4">
+          <div class="box_main" data-aos="fade-up" data-aos-duration="1000">
+            <div class="house_icon">
+              <img src="{% static 'images/food-cover.png' %}" class="image_1" />
+              <img src="{% static 'images/catering2.png' %}" class="image_2" />
+            </div>
+            <h3 class="decorate_text">Catering</h3>
+            <p class="tation_text">
+              Make your next gathering unforgettable with our momo catering
+              service! We offer a variety of catering packages to suit any event
+              size and budget as per need.
+            </p>
+            <div class="readmore_bt"><a href="">Read More</a></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- services section end -->
+
+<!-- gallery section start -->
+<div class="card text-center tab-titles-class">
+  <h1 data-aos="fade-up" data-aos-duration="1000">Top Items</h1>
+  <h3 style="margin-bottom: 30px">Here's our top items for today:</h3>
+  <div class="container">
+    <ul
+      class="tab-titles text-center"
+      data-aos="fade-up"
+      data-aos-duration="1000"
+    >
+      <li class="tab-links menu-title active" onclick="opentab('buf')">Buff</li>
+      <li class="tab-links menu-title" onclick="opentab('chicken')">Chicken</li>
+      <li class="tab-links menu-title" onclick="opentab('veg')">Veg</li>
+    </ul>
+  </div>
+
+  <div
+    class="tab-content active-tab"
+    data-aos="fade-up"
+    data-aos-duration="1000"
+    id="buf"
+  >
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4 menu-item">
+          <div class="row-md-4">
+            <p>
+              <img src="{% static 'images/steam_buff.jpg' %}" />
+            </p>
+          </div>
+          <div class="row-md-2">
+            <span>Buff Steam Momo</span>
+            <div class="card-price">रु120</div>
+          </div>
+        </div>
+        <div class="col-md-4 menu-item">
+          <div class="row-md-4">
+            <p>
+              <img src="{% static 'images/buff_fried.jpg' %}" />
+            </p>
+          </div>
+          <div class="row-md-4">
+            <span>Buff Fried Momo</span>
+            <div class="card-price">रु130</div>
+          </div>
+        </div>
+        <div class="col-md-4 menu-item">
+          <div class="row-md-4">
+            <p>
+              <img src="{% static 'images/buff_momo.jpeg' %}" />
+            </p>
+          </div>
+          <div class="row-md-4">
+            <span>Buff Chilly momo</span>
+            <div class="card-price">रु200</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div
+    class="tab-content"
+    id="chicken"
+    data-aos="fade-up"
+    data-aos-duration="1000"
+  >
+    <div class="container text-center">
+      <div class="row">
+        <div class="col-md-4 menu-item">
+          <div class="row-md-4">
+            <p>
+              <img src="{% static 'images/chicken_steam.jpg' %}" />
+            </p>
+          </div>
+          <div class="row-md-2">
+            <span>Chicken Steam Momo</span>
+            <div class="card-price">रु150</div>
+          </div>
+        </div>
+
+        <div class="col-md-4 menu-item">
+          <div class="row-md-4">
+            <p>
+              <img src="{% static 'images/chicken_fried.jpg' %}" />
+            </p>
+          </div>
+          <div class="row-md-2">
+            <span>Chicken Fried Momo</span>
+            <div class="card-price">रु180</div>
+          </div>
+        </div>
+
+        <div class="col-md-4 menu-item">
+          <div class="row-md-4">
+            <p>
+              <img src="{%  static 'images/chicken_c.jpg' %}" />
+            </p>
+          </div>
+          <div class="row-md-2">
+            <span>Chicken Chilly momo</span>
+            <div class="card-price">रु200</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="tab-content" id="veg" data-aos="fade-up" data-aos-duration="1000">
+    <div class="container text-center">
+      <div class="row">
+        <div class="col-md-4 menu-item">
+          <div class="row-md-4">
+            <p>
+              <img src="{% static 'images/steam_veg.jpg' %}" />
+            </p>
+          </div>
+          <div class="row-md-2">
+            <span>Veg Steam Momo</span>
+            <div class="card-price">रु100</div>
+          </div>
+        </div>
+
+        <div class="col-md-4 menu-item">
+          <div class="row-md-4">
+            <p>
+              <img src="{% static 'images/veg_fried.jpg' %}" />
+            </p>
+          </div>
+          <div class="row-md-2">
+            <span>Veg Fried Momo</span>
+            <div class="card-price">रु110</div>
+          </div>
+        </div>
+
+        <div class="col-md-4 menu-item">
+          <div class="row-md-4">
+            <p>
+              <img src="{% static 'images/veg_momo.jpg' %}" />
+            </p>
+          </div>
+          <div class="row-md-2">
+            <span>Veg Chilly Momo</span>
+            <div class="card-price">रु110</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- gallery section end -->
+
+<!-- testimonial section start -->
+<div class="client_section layout_padding">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12">
+        <h1 class="client_taital" data-aos="fade-up" data-aos-duration="1000">
+          TESTEMONIALS
+        </h1>
+        <p class="client_text" data-aos="fade-up" data-aos-duration="1000">
+          Here's what our customers have to say about us:
+        </p>
+      </div>
+    </div>
+  </div>
+  <div
+    id="carouselExampleIndicators"
+    class="carousel slide"
+    data-ride="carousel"
+  >
+    <ol class="carousel-indicators">
+      <li
+        data-target="#carouselExampleIndicators"
+        data-slide-to="0"
+        class="active"
+      ></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+    </ol>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <div class="client_section_2">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-12">
+                <div class="testimonial_section_2">
+                  <h4
+                    class="client_name_text"
+                    data-aos="fade-up"
+                    data-aos-duration="1000"
+                  >
+                    Sagar Thapa
+                    <span class="quick_icon">
+                      <img src="{% static 'images/sagar.JPG' %}" />
+                    </span>
+                  </h4>
+                  <p
+                    class="customer_text"
+                    data-aos="fade-up"
+                    data-aos-duration="1000"
+                  >
+                    Just discovered this place and I'm obsessed! The atmosphere
+                    is so warm and inviting, perfect for a casual lunch with
+                    friends. We tried a bunch of momos to share - veggie,
+                    chicken, and pork - and honestly, couldn't pick a favorite.
+                    Each one was bursting with flavor and cooked to perfection.
+                    Definitely coming back to work my way through the whole
+                    menu!
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="carousel-item">
+        <div class="client_section_2">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-12">
+                <div class="testimonial_section_2">
+                  <h4 class="client_name_text">
+                    Alex Costa
+                    <span class="quick_icon">
+                      <img src="{% static 'images/alex.jpg' %}" />
+                    </span>
+                  </h4>
+                  <p class="customer_text">
+                    Momos have always been a favorite comfort food, but yours
+                    are on another level! The fillings are so fresh and
+                    flavorful, and the dough is perfectly cooked - light and
+                    chewy at the same time. I can never decide which filling to
+                    try, so the variety is amazing. This place is now my go-to
+                    for a delicious and satisfying meal. Highly recommend!
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="carousel-item">
+        <div class="client_section_2">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-12">
+                <div class="testimonial_section_2">
+                  <h4 class="client_name_text">
+                    Robert Pattinson
+                    <span class="quick_icon">
+                      <img src="{% static 'images/robertpattinson.png' %}" />
+                    </span>
+                  </h4>
+                  <p class="customer_text">
+                    We recently had a family gathering and decided to try your
+                    momo catering for the first time. It was a huge hit!
+                    Everyone loved the different fillings, especially the spicy
+                    ones (me!). The momos themselves were beautifully steamed
+                    and the dipping sauces were delicious. Delivery was on time
+                    and everything was perfectly presented. Huge thanks for
+                    making our event so easy and enjoyable!
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- contact section start -->
+<div class="contact_section_2 layout_padding">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-6 padding_0">
+        <div
+          class="form-container form-container-1"
+          data-aos="fade-up"
+          data-aos-duration="1000"
+        >
+          <form method="POST" action="{% url 'index' %}">
+            {% csrf_token %}
+
+            <h1
+              style="
+                color: white;
+                font-size: 50px;
+                border-bottom: 3px solid #f76d37;
+              "
+              class="text-center"
+            >
+              <b>GET IN TOUCH</b>
+            </h1>
+
+            <div class="form-container">
+              <div class="form">
+                <input
+                  required=""
+                  placeholder="Name"
+                  type="text"
+                  class="input"
+                  name="name"
+                />
+                <input
+                  required=""
+                  placeholder="Email"
+                  type="email"
+                  class="input"
+                  name="email"
+                />
+                <input
+                  required=""
+                  placeholder="Phone Number"
+                  type="tel"
+                  class="input"
+                  name="phone"
+                />
+                <textarea
+                  required=""
+                  placeholder="Say Hello"
+                  rows="10"
+                  cols="30"
+                  id="message"
+                  name="message"
+                  class="textarea"
+                ></textarea>
+                <div class="button-container">
+                  <input type="submit" value="SEND" class="send-button" />
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="col-md-6 padding_0">
+        <div class="map-responsive" data-aos="fade-up" data-aos-duration="1000">
+          <h1 style="color: black; font-size: 50px" class="text-center">
+            <b>OUR LOCATION</b>
+          </h1>
+
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d28271.385395995967!2d85.30681893018455!3d27.657848525765967!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb175804d46333%3A0x407a3f6860e99df2!2sImadol%2C%20Mahalaxmi!5e0!3m2!1sen!2snp!4v1711573181565!5m2!1sen!2snp"
+            width="600px"
+            height="620px"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- contact section end -->
+
+{% endblock content %}
